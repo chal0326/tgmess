@@ -3,8 +3,8 @@ import { TelegramClient } from 'telegram';
 import { StringSession } from 'telegram/sessions';
 import { Send, LogIn } from 'lucide-react';
 
-const API_ID = 25398009;
-const API_HASH = '6cd49834b186f216af9bbcd7aa9ba3ce';
+const API_ID = process.env.API_ID;
+const API_HASH = process.env.API_HASH;
 
 function App() {
   const [client, setClient] = useState<TelegramClient | null>(null);
